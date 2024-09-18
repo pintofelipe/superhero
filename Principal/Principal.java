@@ -18,38 +18,37 @@ public class Principal {                                                        
     public static void main(String[] args) {                                        // 1 paso
         // TODO code application logic here
         
-        Superheroe sup1 = new Superheroe("Spiderman");
-        sup1.setNombre("Hombre Araña");
-        sup1.setDescripcion("Lanza tela de araña y viste de rojo.");
+        Superheroe sup1 = new Superheroe("Spiderman");                      // 10 pasos
+        sup1.setNombre("Hombre Araña");                                     // 3 pasos
+        sup1.setDescripcion("Lanza tela de araña y viste de rojo.");   // 3 pasos
         
-        System.out.println(sup1.getNombre());
-        System.out.println(sup1.getDescripcion());
+        System.out.println(sup1.getNombre());                                      // 3 pasos
+        System.out.println(sup1.getDescripcion());                                 // 3 pasos
+        System.out.println(sup1.toString());                                       // 3 pasos
         
-        System.out.println(sup1.toString());
+        Superheroe sup2 = new Superheroe("Batman");                         // 10 pasos
+        sup2.setDescripcion("Tiene los poderes de un murciélago.");    // 3 pasos
+        sup2.setCapa(true);                                                   // 3 pasos
         
-        Superheroe sup2 = new Superheroe("Batman");
-        sup2.setDescripcion("Tiene los poderes de un murciélago.");
-        sup2.setCapa(true);
+        System.out.println(sup2.toString());                                       // 4 pasos
         
-        System.out.println(sup2.toString());
+        Dimension dimPeq = new Dimension();  // alto = 0, ancho = 0, prof = 0      // 10 pasos
+        Dimension dimGra = new Dimension(70,20,20);         // 10 pasos
         
-        Dimension dimPeq = new Dimension();  // alto = 0, ancho = 0, prof = 0
-        Dimension dimGra = new Dimension(70,20,20); 
-        
-        dimPeq.setAlto(20);
-        dimPeq.setAncho(5);
-        dimPeq.setProfundidad(6);  
+        dimPeq.setAlto(20);                                                   // 3 pasos
+        dimPeq.setAncho(5);                                                  // 3 pasos
+        dimPeq.setProfundidad(6);                                      // 3 pasos
         //ahora dimPeq es:   alto = 20, ancho = 5, prof = 6
         
-        System.out.println(dimPeq);
-        System.out.println(dimGra);
-        System.out.println("Volumen de la dimension pequeña: "+dimPeq.getVolumen());
+        System.out.println(dimPeq);                                                // 1 paso
+        System.out.println(dimGra);                                                // 1 paso
+        System.out.println("Volumen de la dimension pequeña: "+dimPeq.getVolumen()); // 3 pasos
         
-        Figura figSpi = new Figura("spid-01",30,sup1,dimPeq);
+        Figura figSpi = new Figura("spid-01",30,sup1,dimPeq);        // 12 pasos
         
-        System.out.println(figSpi.toString());
-        figSpi.subirPrecio(10);
-        System.out.println(figSpi.toString());
+        System.out.println(figSpi.toString());                                      // 4 pasos
+        figSpi.subirPrecio(10);                                            // 3 pasos
+        System.out.println(figSpi.toString());                                      // 4 pasos
         
         Coleccion col = new Coleccion("Super");
         

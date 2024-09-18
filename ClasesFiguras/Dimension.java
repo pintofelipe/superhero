@@ -6,61 +6,60 @@
 package ClasesFiguras;
 
 /**
- *
- * @author JoseManuel
+ 192177
  */
-public class Dimension {
-    private double alto;
-    private double ancho;
-    private double profundidad;
+public class Dimension {                                                    // 1 paso
+    private double alto;                                                    // 1 paso
+    private double ancho;                                                   // 1 paso
+    private double profundidad;                                             // 1 paso
 
-    public Dimension() {
-        this.alto = 0;
-        this.ancho = 0;
-        this.profundidad = 0;
-    }
+    public Dimension() {                                                    // 1 paso
+        this.alto = 0;                                                      // 1 paso
+        this.ancho = 0;                                                     // 1 paso
+        this.profundidad = 0;                                               // 1 paso
+    }                                                                       // 1 paso
     
-    public Dimension(double alto, double ancho, double profundidad) {
-        this.alto = alto;
-        this.ancho = ancho;
-        this.profundidad = profundidad;
-    }
+    public Dimension(double alto, double ancho, double profundidad) {       // 1 paso
+        this.alto = alto;                                                   // 1 paso
+        this.ancho = ancho;                                                 // 1 paso
+        this.profundidad = profundidad;                                     // 1 paso
+    }                                                                       // 1 paso
     
 
-    public double getAlto() {
-        return alto;
-    }
+    public double getAlto() {                                               // 1 paso
+        return alto;                                                        // 1 paso
+    }                                                                       // 1 paso
 
-    public void setAlto(double alto) {
-        this.alto = alto;
-    }
+    public void setAlto(double alto) {                                      // 1 paso
+        this.alto = alto;                                                   // 1 paso
+    }                                                                       // 1 paso
 
-    public double getAncho() {
-        return ancho;
-    }
+    public double getAncho() {                                              // 1 paso
+        return ancho;                                                       // 1 paso
+    }                                                                       // 1 paso
 
-    public void setAncho(double ancho) {
-        this.ancho = ancho;
-    }
+    public void setAncho(double ancho) {                                    // 1 paso
+        this.ancho = ancho;                                                 // 1 paso
+    }                                                                       // 1 paso
 
-    public double getProfundidad() {
-        return profundidad;
-    }
+    public double getProfundidad() {                                        // 1 paso
+        return profundidad;                                                 // 1 paso
+    }                                                                       // 1 paso
 
-    public void setProfundidad(double profundidad) {
-        this.profundidad = profundidad;
-    }
+    public void setProfundidad(double profundidad) {                        // 1 paso
+        this.profundidad = profundidad;                                     // 1 paso
+    }                                                                       // 1 paso
 
-    @Override
-    public String toString() {
+    @Override                                                               // 1 paso
+    public String toString() {                                              // 1 paso
         return "Dimension{" + "alto=" + alto + ", ancho=" + ancho + ", profundidad=" + profundidad +
-                ", volumen=" + getVolumen() + '}';
-    }
+                ", volumen=" + getVolumen() + '}';                          //  paso
+    }                                                                       // 1 paso
 
     
-    public double getVolumen() {
-        return alto*ancho*profundidad;
-    }
+    public double getVolumen() {                                            // 1 paso
+        return alto*ancho*profundidad;                                      // 1 paso
+    }                                                                       // 1 paso
     
     
-}
+}                                                                           // 1 paso

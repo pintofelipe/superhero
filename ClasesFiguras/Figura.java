@@ -6,61 +6,60 @@
 package ClasesFiguras;
 
 /**
- *
- * @author JoseManuel
+192177
  */
-public class Figura {
-    private String codigo;
-    private double precio;
-    private Superheroe superheroe;
-    private Dimension dimensiones;
+public class Figura {                                                                              // 1 paso
+    private String codigo;                                                                         // 1 paso
+    private double precio;                                                                         // 1 paso
+    private Superheroe superheroe;                                                                 // 1 paso
+    private Dimension dimensiones;                                                                  // 1 paso
 
-    public Figura(String codigo, double precio, Superheroe superheroe, Dimension dimensiones) {
-        this.codigo = codigo;
-        this.precio = precio;
-        this.superheroe = superheroe;
-        this.dimensiones = dimensiones;
-    }
+    public Figura(String codigo, double precio, Superheroe superheroe, Dimension dimensiones) {     // 1 paso
+        this.codigo = codigo;                                                                       // 1 paso
+        this.precio = precio;                                                                       // 1 paso
+        this.superheroe = superheroe;                                                               // 1 paso
+        this.dimensiones = dimensiones;                                                             // 1 paso
+    }                                                                                               // 1 paso
 
-    public String getCodigo() {
-        return codigo;
-    }
+    public String getCodigo() {                                                                     // 1 paso
+        return codigo;                                                                              // 1 paso
+    }                                                                                               // 1 paso
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
-    }
+    public void setCodigo(String codigo) {                                                          // 1 paso
+        this.codigo = codigo;                                                                       // 1 paso
+    }                                                                                               // 1 paso
 
-    public double getPrecio() {
-        return precio;
-    }
+    public double getPrecio() {                                                                     // 1 paso 
+        return precio;                                                                              // 1 paso
+    }                                                                                               // 1 paso
 
-    public void setPrecio(double precio) {
-        this.precio = precio;
-    }
+    public void setPrecio(double precio) {                                                          // 1 paso
+        this.precio = precio;                                                                       // 1 paso
+    }                                                                                               // 1 paso
 
-    public Superheroe getSuperheroe() {
-        return superheroe;
-    }
+    public Superheroe getSuperheroe() {                                                             // 1 paso
+        return superheroe;                                                                          // 1 paso
+    }                                                                                               // 1 paso
 
-    public void setSuperheroe(Superheroe superheroe) {
-        this.superheroe = superheroe;
-    }
+    public void setSuperheroe(Superheroe superheroe) {                                              // 1 paso
+        this.superheroe = superheroe;                                                               // 1 paso
+    }                                                                                               // 1 paso
 
-    public Dimension getDimensiones() {
-        return dimensiones;
-    }
+    public Dimension getDimensiones() {                                                             // 1 paso
+        return dimensiones;                                                                         // 1 paso
+    }                                                                                               // 1 paso
 
-    public void setDimensiones(Dimension dimensiones) {
-        this.dimensiones = dimensiones;
-    }
+    public void setDimensiones(Dimension dimensiones) {                                             // 1 paso
+        this.dimensiones = dimensiones;                                                             // 1 paso
+    }                                                                                               // 1 paso
 
-    @Override
-    public String toString() {
-        return "Figura:\n" + "codigo=" + codigo + ", precio=" + precio + "\n" + superheroe + "\n" + dimensiones;
-    }
+    @Override                                                                                                       // 1 paso
+    public String toString() {                                                                      
+        return "Figura:\n" + "codigo=" + codigo + ", precio=" + precio + "\n" + superheroe + "\n" + dimensiones;    // 1 paso
+    }                                                                                                               // 1 paso
+
+    public void subirPrecio(double cantidad) {                                                                      // 1 paso
+        precio += cantidad;                                                                                         // 1 paso
+    }                                                                                                               // 1 paso
     
-    public void subirPrecio(double cantidad) {
-        precio += cantidad;
-    }
-    
-}
+}                                                                                                                   // 1 paso

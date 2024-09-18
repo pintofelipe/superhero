@@ -5,92 +5,91 @@
  */
 package ClasesFiguras;
 
-import java.util.ArrayList;
+import java.util.ArrayList;                                                          // 1 paso
 
 /**
- *
- * @author JoseManuel
+192177
  */
-public class Coleccion {
-    private String nombreColeccion;
-    private ArrayList<Figura> listaFiguras;
+public class Coleccion {                                                             // 1 paso
+    private String nombreColeccion;                                                  // 1 paso
+    private ArrayList<Figura> listaFiguras;                                          // 1 paso
 
-    public Coleccion(String nombreColeccion) {
-        this.nombreColeccion = nombreColeccion;
-        listaFiguras = new ArrayList<>();
-    }
+    public Coleccion(String nombreColeccion) {                                       // 1 paso
+        this.nombreColeccion = nombreColeccion;                                      // 1 paso
+        listaFiguras = new ArrayList<>();                                            // 1 paso
+    }                                                                                // 1 paso
 
-    public String getNombreColeccion() {
-        return nombreColeccion;
-    }
+    public String getNombreColeccion() {                                            // 1 paso
+        return nombreColeccion;                                                     // 1 paso
+    }                                                                               // 1 paso
 
-    public void setNombreColeccion(String nombreColeccion) {
-        this.nombreColeccion = nombreColeccion;
-    }
+    public void setNombreColeccion(String nombreColeccion) {                        // 1 paso
+        this.nombreColeccion = nombreColeccion;                                     // 1 paso
+    }                                                                               // 1 paso
     
-    public void añadirFigura(Figura fig){
-        listaFiguras.add(fig);
-    }
+    public void añadirFigura(Figura fig){                                           // 1 paso
+        listaFiguras.add(fig);                                                      // 1 paso
+    }                                                                               // 1 paso
     
-    public void subirPrecio(double cantidad, String id) {
-        for(Figura f:listaFiguras) {  //for each
-            if(f.getCodigo().equals(id)) {
-                f.subirPrecio(cantidad);
-            }
-        }
-    }
+    public void subirPrecio(double cantidad, String id) {                           // 1 paso
+        for(Figura f:listaFiguras) {  //for each                                    n + 1
+            if(f.getCodigo().equals(id)) {                                          // n
+                f.subirPrecio(cantidad);                                            // n
+            }                                                                       // n
+        }                                                                           // n
+    }                                                                               // 1 paso
 
-    @Override
-    public String toString() {
-        String cadena = "Colección "+nombreColeccion+"\n---------------\n";
+    @Override                                                                       // 1 paso
+    public String toString() {                                                      // 1 paso
+        String cadena = "Colección "+nombreColeccion+"\n---------------\n";         // 1 paso
         
-        for(Figura f:listaFiguras) {
-            cadena += f+"\n";
-        }
+        for(Figura f:listaFiguras) {                                                // n + 1
+            cadena += f+"\n";                                                       // n
+        }                                                                           // n
         
-        return cadena;
-    }
+        return cadena;                                                              // 1 paso
+    }                                                                               // 1 paso
     
     
-    public String conCapa() {
-        String cadena = "Figuras de superhéroes con capa\n---------------\n";
-        for(Figura f:listaFiguras) {
-            if(f.getSuperheroe().isCapa()) {
-                cadena += f+"\n";
-            }
-        }
+    public String conCapa() {                                                       // 1 paso
+        String cadena = "Figuras de superhéroes con capa\n---------------\n";       // 1 paso
+        for(Figura f:listaFiguras) {                                                // n + 1 
+            if(f.getSuperheroe().isCapa()) {                                        // n 
+                cadena += f+"\n";                                                   // n
+            }                                                                       // n
+        }                                                                           // n
         
-        return cadena;
-    }
+        return cadena;                                                              // 1 paso
+    }                                                                               // 1 paso
     
-    public Figura masValioso() {
-        double precioMayor = 0.0;
-        Figura fMayor = null;
+    public Figura masValioso() {                                                    // 1 paso
+        double precioMayor = 0.0;                                                   // 1 paso
+        Figura fMayor = null;                                                       // 1 paso
+
+        for(Figura f:listaFiguras) {                                                // n + 1
+            if(f.getPrecio()>precioMayor) {                                         // n
+                precioMayor = f.getPrecio();                                        // n
+                fMayor = f;                                                         // n 
+            }                                                                       // n
+        }                                                                           // n
         
-        for(Figura f:listaFiguras) {
-            if(f.getPrecio()>precioMayor) {
-                precioMayor = f.getPrecio();
-                fMayor = f;
-            }
-        }
-        
-        return fMayor;
-    }
+        return fMayor;                                                              // 1 paso
+    }                                                                               // 1 paso
     
-    public double getValorColeccion() {
-        double valor = 0;
-        for(Figura f:listaFiguras) {
-            valor += f.getPrecio();
-        }
-        return valor;
-    }
+    public double getValorColeccion() {                                             // 1 paso
+        double valor = 0;                                                           // 1 paso
+        for(Figura f:listaFiguras) {                                                // n + 1
+            valor += f.getPrecio();                                                 //
+        }                                                                           // n
+        return valor;                                                               // 1 paso
+    }                                                                               // 1 paso
     
-    public double getVolumenColeccion() {
-        double vol = 0;
-        for(Figura f:listaFiguras) {
-            vol += f.getDimensiones().getVolumen();
-        }
-        return vol+200;
-    }
+    public double getVolumenColeccion() {                                           // 1 paso
+        double vol = 0;                                                             // 1 paso
+        for(Figura f:listaFiguras) {                                                // n + 1
+            vol += f.getDimensiones().getVolumen();                                 // n
+        }                                                                           // n
+        return vol+200;                                                             // 1 paso
+    }                                                                               // 1 paso
     
-}
+}                                                                                   // 1 paso
