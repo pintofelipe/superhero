@@ -54,11 +54,10 @@ public class Coleccion {                                                        
     public String conCapa() {                                                       // 1 paso
         String cadena = "Figuras de superhéroes con capa\n---------------\n";       // 1 paso
         for(Figura f:listaFiguras) {                                                // n + 1 
-            if(f.getSuperheroe().isCapa()) {                                        // n 
+            if(f.getSuperheroe().isCapa()) {                                        // 3n
                 cadena += f+"\n";                                                   // n
             }                                                                       // n
         }                                                                           // n
-        
         return cadena;                                                              // 1 paso
     }                                                                               // 1 paso
     
@@ -67,7 +66,7 @@ public class Coleccion {                                                        
         Figura fMayor = null;                                                       // 1 paso
 
         for(Figura f:listaFiguras) {                                                // n + 1
-            if(f.getPrecio()>precioMayor) {                                         // n
+            if(f.getPrecio()>precioMayor) {                                         // 3n
                 precioMayor = f.getPrecio();                                        // n
                 fMayor = f;                                                         // n 
             }                                                                       // n

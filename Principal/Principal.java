@@ -30,7 +30,7 @@ public class Principal {                                                        
         sup2.setDescripcion("Tiene los poderes de un murciélago.");    // 3 pasos
         sup2.setCapa(true);                                                   // 3 pasos
         
-        System.out.println(sup2.toString());                                       // 4 pasos
+        System.out.println(sup2.toString());                                       // 5 pasos
         
         Dimension dimPeq = new Dimension();  // alto = 0, ancho = 0, prof = 0      // 10 pasos
         Dimension dimGra = new Dimension(70,20,20);         // 10 pasos
@@ -50,23 +50,24 @@ public class Principal {                                                        
         figSpi.subirPrecio(10);                                            // 3 pasos
         System.out.println(figSpi.toString());                                      // 4 pasos
         
-        Coleccion col = new Coleccion("Super");
+        Coleccion col = new Coleccion("Super");                     // 8 pasos
         
-        col.añadirFigura(figSpi);
+        col.añadirFigura(figSpi);                                                   // 3 pasos
         
-        Figura figBat = new Figura("bat-02",50,sup2,dimPeq);
-        col.añadirFigura(figBat);
+        Figura figBat = new Figura("bat-02",50,sup2,dimPeq);          // 12 pasos
+        col.añadirFigura(figBat);                                                   // 3 pasos
         
-        Superheroe sup3 = new Superheroe("Ironman");
-        sup3.setDescripcion("Superhéroe con traje de metal capaz de volar");
-        Figura figIron = new Figura("iron-03",20,sup3,new Dimension(6,3,4));
-        col.añadirFigura(figIron);
+        Superheroe sup3 = new Superheroe("Ironman");                         // 10 pasos
+        sup3.setDescripcion("Superhéroe con traje de metal capaz de volar"); // 3 pasos
+        Figura figIron = new Figura("iron-03",20,sup3,new Dimension(6,3,4));    // 12 pasos 
+        col.añadirFigura(figIron);                                                  // 3 pasos
         
-        System.out.println(col);
+        System.out.println(col);                                                    // 9 paso
         
-        System.out.println(col.conCapa());
+        System.out.println(col.conCapa());                                          // 7 pasos + 8n
      
-        Figura fMasValiosa = col.masValioso();
+        Figura fMasValiosa = col.masValioso();                                      //  7 pasos + 
+
         System.out.println("Figura de más valor: "+fMasValiosa);
         
         System.out.println("Valor de la coleccion: "+col.getValorColeccion());
